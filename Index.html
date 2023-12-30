@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
+    <!-- Extra Styling-->
+    <style>
+      body {
+        background-color: #1a1a1d;
+        font-family: sans-serif;
+      }
+      .cont {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .smallText {
+        font-size: 18px;
+        color: #969696;
+      }
+      .bigText {
+        font-size: 60px;
+        color: #c3073f;
+        font-weight: 700;
+      }
+      .medText {
+        font-size: 35px;
+        color: #d4d3d3;
+        font-weight: 600;
+      }
+      .descSize {
+        max-width: 600px;
+      }
+      .secHead {
+        color: #d4d3d3;
+        font-size: 25px;
+        font-weight: 600;
+      }
+      .sideTag {
+        font-size: 12px;
+        color: #a7a7a7;
+      }
+      .sideTagExt {
+        font-size: 12px;
+        color: #a7a7a7;
+        opacity: 40%;
+        font-weight: 600;
+      }
+      .Compname {
+        font-size: 20px;
+        color: #c3073f;
+        font-weight: 600;
+      }
+      .cIcon {
+        font-size: 16px;
+        color: #ffffff;
+      }
+      .lIcon {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-size: 450px;
+        z-index: -99;
+        opacity: 5%;
+        color: #a5a5a5;
+      }
+      .lTab {
+        position: fixed;
+      }
+      .socialIcn {
+        font-size: 35px;
+        color: #969696;
+      }
+      @media only screen and (max-width: 767px) {
+        .lTab {
+          position: relative;
+        }
+      }
+    </style>
+    <title>Home Page</title>
+  </head>
+  <body>
+    <div class="fixed-top lIcon">
+      <i class="bi bi-bug-fill"></i>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mt-5 pt-5">
+          <div class="lTab">
+            <div class="col-12">
+              <span class="smallText">Hello, my name is<br /></span>
+              <span class="bigText">Vivek Vairagade.<br /></span>
+              <span class="medText">I am a Software Developer. <br /></span>
+            </div>
+            <div class="col-12"></div>
+            <div class="col-12"></div>
+            <div class="col descSize">
+              <span class="smallText"
+                >A skilled and versatile software developer with extensive
+                experience in Salesforce, Angular, and Java technologies. Proven
+                expertise in designing, developing, and implementing robust
+                solutions that leverage the capabilities of these platforms.
+                Adept at creating scalable and efficient applications that meet
+                business requirements and drive organizational success.
+              </span>
+            </div>
+            <div class="col mt-4">
+              <a onclick="openResume()" class="btn btn-sm btn-outline-danger"
+                >Resume Link</a
+              >
+            </div>
+            <div class="col mt-4">
+              <i
+                class="bi bi-linkedin socialIcn me-4"
+                onclick="openlinkedIn()"
+              ></i>
+              <i
+                class="bi bi-cloud-fill socialIcn me-4"
+                onclick="openTrailHead()"
+              ></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-5 mt-5 pt-5">
+          <div class="mb-2 p-0">
+            <span class="secHead">EXPERIENCE</span>
+          </div>
+          <div class="row">
+            <div class="col-md-4 bg-dark p-2 shadow mb-4 sideTagExt">
+              Jun 2022 - Present
+            </div>
+            <div class="col-md-8 mb-4">
+              <span class="Compname">Persistent Systems <br /></span>
+              <span class="cIcon">Software Developer <br /></span>
+              <span class="sideTag"
+                >As a Software Engineer, I played a pivotal role in developing
+                and maintaining Salesforce solutions within the BFSI sector. My
+                responsibilities included: <br
+              /></span>
+              <span class="sideTag"
+                ><i class="bi bi-bug-fill cIcon"></i> Designing, developing, and
+                customizing Salesforce solutions, including configuration,
+                custom coding, and integration with third-party applications.
+                <br
+              /></span>
+              <span class="sideTag"
+                ><i class="bi bi-bug-fill cIcon"></i> Optimizing system
+                performance and user experience through Salesforce best
+                practices and code optimizations. <br
+              /></span>
+              <span class="sideTag"
+                ><i class="bi bi-bug-fill cIcon"></i> Collaborating with
+                stakeholders to define and refine project scope, timelines, and
+                deliverables. <br
+              /></span>
+              <button
+                type="button"
+                class="btn btn-outline-info rounded-pill btn-sm m-1 disabled"
+              >
+                Apex
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-info rounded-pill btn-sm m-1 disabled"
+              >
+                Aura
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-info rounded-pill btn-sm m-1 disabled"
+              >
+                LWC
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-info rounded-pill btn-sm m-1 disabled"
+              >
+                Integration
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-info rounded-pill btn-sm m-1 disabled"
+              >
+                Salesforce Admin
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-info rounded-pill btn-sm m-1 disabled"
+              >
+                Git
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-info rounded-pill btn-sm m-1 disabled"
+              >
+                Rest API
+              </button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 bg-dark p-2 shadow mb-2 sideTagExt">
+              Jan 2022 - Jun 2022
+            </div>
+            <div class="col-md-8 mb-2">
+              <span class="Compname">Persistent Systems <br /></span>
+              <span class="cIcon">Software Developer Intern <br /></span>
+              <span class="sideTag"
+                >During my internship as a Salesforce Developer, I received
+                comprehensive training and hands-on experience in the Salesforce
+                platform. Throughout this internship, I accomplished the
+                following: <br
+              /></span>
+              <span class="sideTag"
+                ><i class="bi bi-bug-fill cIcon"></i> Developed and customized
+                Salesforce solutions, including custom objects, fields,
+                workflows, and approval processes. <br
+              /></span>
+              <span class="sideTag"
+                ><i class="bi bi-bug-fill cIcon"></i> Participated in the
+                creation and maintenance of Visualforce pages and Lightning
+                components to enhance user interfaces. <br
+              /></span>
+              <span class="sideTag"
+                ><i class="bi bi-bug-fill cIcon"></i> Gained practical knowledge
+                of Apex programming and SOQL queries to implement advanced
+                functionality. <br
+              /></span>
+              <button
+                type="button"
+                class="btn btn-outline-info rounded-pill btn-sm m-1 disabled"
+              >
+                Apex
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-info rounded-pill btn-sm m-1 disabled"
+              >
+                Aura
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-info rounded-pill btn-sm m-1 disabled"
+              >
+                LWC
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-info rounded-pill btn-sm m-1 disabled"
+              >
+                Rest API
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-info rounded-pill btn-sm m-1 disabled"
+              >
+                Salesforce Admin
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-info rounded-pill btn-sm m-1 disabled"
+              >
+                JavaScript
+              </button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 bg-dark p-2 shadow mb-2 sideTagExt">
+              Jan 2021 - Oct 2021
+            </div>
+            <div class="col-md-8 mb-2">
+              <span class="Compname">Solar Industries Limited<br /></span>
+              <span class="cIcon">Web Development Intern <br /></span>
+              <span class="sideTag"
+                >As a Web Developer Intern, I gained valuable hands-on
+                experience in web development, focusing on the Angular framework
+                and Spring Boot. During this internship, I had the opportunity
+                to: <br
+              /></span>
+              <span class="sideTag"
+                ><i class="bi bi-bug-fill cIcon"></i> Assisted in the
+                development of user-friendly and visually appealing front-end
+                interfaces, ensuring a seamless user experience. <br
+              /></span>
+              <span class="sideTag"
+                ><i class="bi bi-bug-fill cIcon"></i> Participated in the design
+                and creation of RESTful APIs using Spring Boot, enabling
+                efficient data exchange between the front-end and back-end
+                systems. <br
+              /></span>
+              <span class="sideTag"
+                ><i class="bi bi-bug-fill cIcon"></i> Successfully completed
+                projects that enhanced my proficiency in Angular, JavaScript,
+                HTML, CSS, Git and responsive web design principles. <br
+              /></span>
+              <button
+                type="button"
+                class="btn btn-outline-info rounded-pill btn-sm m-1 disabled"
+              >
+                Angular
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-info rounded-pill btn-sm m-1 disabled"
+              >
+                Java
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-info rounded-pill btn-sm m-1 disabled"
+              >
+                Spring
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-info rounded-pill btn-sm m-1 disabled"
+              >
+                Rest API
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-info rounded-pill btn-sm m-1 disabled"
+              >
+                Git
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-info rounded-pill btn-sm m-1 disabled"
+              >
+                JavaScript
+              </button>
+            </div>
+          </div>
+          <div class="mb-2 mt-5 p-0">
+            <span class="secHead">CERTIFICATIONS</span>
+          </div>
+          <div class="row">
+            <div class="col-md-12 mb-3 smallText">
+                <img src="https://drive.google.com/uc?id=1cuK0vcQqbv7gV2YYdi31uuDq76EOijqw" class="card-img-top" alt="...">
+                <p class="text-center">Salesforce Certified Administrator</p>
+              </div>
+            </div>
+            <div class="col-md-12 mb-3 smallText">
+              <img src="https://drive.google.com/uc?id=11cA3nwITvfn0wTX_zb369DSkP_R752rf" class="card-img-top" alt="...">
+              <p class="text-center">Salesforce Certified Platform Developer I</p>
+            </div>
+            <div class="col-md-12 mb-3 smallText">
+              <img src="https://drive.google.com/uc?id=11X-KhwS5xrfMoDO37bu-vdmTNYmsm6CQ" class="card-img-top" alt="...">
+              <p class="text-center">Salesforce Certified AI Associate</p>
+            </div>
+          </div>
+        </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function openResume() {
+        var url =
+          "https://drive.google.com/file/d/1mSYrD39G0zlI387KpEw0Xv_JrGyoxVsT/view?usp=drive_link";
+        window.open(url, "_blank");
+      }
+      function openlinkedIn() {
+        var url = "https://www.linkedin.com/in/vivek-vairagade";
+        window.open(url, "_blank");
+      }
+      function openTrailHead() {
+        var url = "https://www.salesforce.com/trailblazer/vvairagade2407";
+        window.open(url, "_blank");
+      }
+    </script>
+  </body>
+</html>
